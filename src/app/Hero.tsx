@@ -1,11 +1,12 @@
 import { JSX } from "react";
 import Image from "next/image";
+import VideoCarousel from "./components/VideoCarousel";
 
 
 export default function Hero(): JSX.Element {
   return (
     <>
-      <section className="bg-[#FFF9EF] py-20 px-20">
+      <section className="flex flex-col bg-[#FFF9EF] py-20 px-20">
 
 
         <div className="flex flex-col md:flex-row items-start gap-8 mt-10">
@@ -37,8 +38,11 @@ export default function Hero(): JSX.Element {
 
         </div>
 
+        <h2 className="ml-auto mr-auto mt-30 text-3xl md:text-sxl font-bold font-display text-[#A7281B]">Mis vídeos</h2>
 
-
+        <section className="mt-20">
+            <VideoCarousel/>
+        </section>
       </section>
     </>
   );
