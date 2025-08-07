@@ -22,12 +22,13 @@ export default function VideoCarousel() {
     <>
 
       <div className="relative w-full py-4">
-        <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10 text-2xl px-2 text-gray-700 hover:text-black "> ‹ </button>
-        <button className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10 text-2xl px-2 text-gray-700 hover:text-black "> › </button>
+        <button className="swiper-button-prev-custom absolute left-0 top--1 -translate-y-1/2 z-10 text-2xl px-2 text-gray-700 hover:text-black "> ‹ </button>
+        <button className="swiper-button-next-custom absolute right-0 top--1 -translate-y-1/2 z-10 text-2xl px-2 text-gray-700 hover:text-black "> › </button>
         <Swiper
           modules={[Navigation]}
-          spaceBetween={-70}
-          slidesPerView={2}
+          spaceBetween={10}
+          slidesPerView={"auto"}
+          centeredSlides
           navigation={{
             prevEl: ".swiper-button-prev-custom",
             nextEl: ".swiper-button-next-custom"
