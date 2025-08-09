@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import Image from "next/image";
 import VideoCarousel from "./components/VideoCarousel";
+import ContactForm from "./components/ContactForm";
 
 
 export default function Hero(): JSX.Element {
@@ -42,6 +43,10 @@ export default function Hero(): JSX.Element {
 
         <section className="mt-20">
             <VideoCarousel/>
+        </section>
+        <section className="mt-20 text-center">
+          <h1 className="text-3xl left-auto right-auto md:text-4xl font-bold font-display text-[#A7281B]">Déjame un mensaje</h1>
+          <ContactForm/>
         </section>
       </section>
     </>
